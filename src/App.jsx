@@ -23,12 +23,12 @@ function App() {
       setMode("dark");
       document.body.style.backgroundColor = "#0a3e72";
       showAlert("Dark Mode has been enable", "success");
-      document.title = "Text Utile Dark Mode";
+      // document.title = "Text Utile Dark Mode";
     } else {
       setMode("light");
       document.body.style.backgroundColor = "white";
       showAlert("light Mode has been enable", "success");
-      document.title = "Text Utile Light Mode"; // used to change the title of page
+      // document.title = "Text Utile Light Mode"; // used to change the title of page
     }
   };
   return (
@@ -43,7 +43,7 @@ function App() {
         <Alert alert={alert} />
         <TextForm
           showAlert={showAlert}
-          heading="Enter the text to Analyse Below"
+          heading="Try TextUtils - Word Counter, Character Counter, Remove Extra Spaces"
           mode={mode}
         />
       </div>
